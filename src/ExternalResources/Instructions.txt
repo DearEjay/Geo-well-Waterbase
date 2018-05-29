@@ -1,0 +1,50 @@
+Local Testing on your own computer
+
+brew install tomcat
+catalina start
+open web browser to localhost:8080
+Should see default webpage
+cd /usr/local/Cellar/tomcat/8.5.12/libexec/webapps/ROOT
+rm -r * 
+git clone https://github.com/JayJayEvans/WaterBase.git .    //notice the space then period
+cp mysql-connector-java-5.1.41-bin.jar /usr/local/Cellar/tomcat/8.5.12/libexec/lib
+
+
+SASS CSS Framework
+- sudo gem install sass
+- sudo gem install compass
+- sass files have .scss extension and need to be converted for use
+- sass <filename>.scss <filename>.css
+
+
+Using Mysql on workbench
+
+ssh Hostname: ec2-52-42-229-104.us-west-2.compute.amazonaws.com
+ssh Username: <you user>    ejay   pearson
+ssh password: password
+mysql Username: evansj
+mysql Password: suiteswellzwfate1
+
+
+
+Connect to Ubuntu Server - final location of project
+
+ssh -XC <USERNAME>ec2-52-42-229-104.us-west-2.compute.amazonaws.com
+/var/lib/tomcat8/webapps/jsp    //project location
+http://ec2-52-42-229-104.us-west-2.compute.amazonaws.com:8080/
+Accounts:
+ejay    password
+pearson password
+
+
+To Do List:
+File Uplaod Configuration - Jason
+Register at login page
+Manual Data Entry 
+Pull RainInfo for a specified latitude/long
+Change sessions to cookies
+Prevent Main Page loading unless user is logged in
+Contact Us page: Embedded email form and list phone numbers
+
+http://codepen.io/ehermanson/pen/KwKWEv/
+
